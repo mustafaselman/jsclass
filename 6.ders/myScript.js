@@ -197,8 +197,21 @@ function myDisplayer(some){
 //         myReject("Error")
 //     }
 // })
+// // myPromise.then(function(value) {
+// //     myDisplayer(value)
+// // }, function(error){
+// //     myDisplayer(error)
+// // })
+// myPromise
+// .then(function(value){
+//     myDisplayer(value)
+// })
+// .catch(function(error){
+//     myDisplayer(error)
+// })
+// .finally(console.log("işlem tamamlandı"))
 
-let myPromise = new Promise(function myFunction(){
+function myPromise(){
     let x = 0 ;
     if(x == 0) {
         return Promise.resolve("OK") 
@@ -208,15 +221,8 @@ let myPromise = new Promise(function myFunction(){
         return Promise.reject("Error")
     }
     
-})
-
-
-// myPromise.then(function(value) {
-//     myDisplayer(value)
-// }, function(error){
-//     myDisplayer(error)
-// })
-myPromise
+}
+myPromise()
 .then(function(value){
     myDisplayer(value)
 })
