@@ -154,15 +154,16 @@
 // let result = myCalculator(3,4)
 // myDisplayer(result)
 
-// function myDisplayer(some){
-//     console.log(some)
-// }
-// function myCalculator(num1,num2,myCallback){
-//     let sum = num1 + num2 ;
-//     console.log("calculator fonksiyonu çalıştı")
-//     // myCallback(sum)
-// }
-// myCalculator(2,3)
+function myDisplayer(some){
+    console.log(some)
+}
+//düzeltme var
+function myCalculator(num1,num2,myCallback = () => {}){
+    let sum = num1 + num2 ;
+    console.log("calculator fonksiyonu çalıştı")
+    myCallback(sum)
+}
+myCalculator(2,3)
 
 //settime , setinterval
 
@@ -211,6 +212,7 @@ function myDisplayer(some){
 // })
 // .finally(console.log("işlem tamamlandı"))
 
+//düzeltme var
 function myPromise(){
     let x = 0 ;
     if(x == 0) {
