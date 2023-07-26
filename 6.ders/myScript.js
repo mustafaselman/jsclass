@@ -177,7 +177,7 @@ myCalculator(2,3)
 // }
 // setInterval(myFunction, 3000)
 
-//promise objesi
+// promise objesi
 // let myPromise = new Promise(function(myResolve,myReject){
 //     myResolve(); //başarılı olduğunda
 //     myReject(); //başarısız olduğunda
@@ -198,11 +198,11 @@ function myDisplayer(some){
 //         myReject("Error")
 //     }
 // })
-// // myPromise.then(function(value) {
-// //     myDisplayer(value)
-// // }, function(error){
-// //     myDisplayer(error)
-// // })
+// myPromise.then(function(value) {
+//     myDisplayer(value)
+// }, function(error){
+//     myDisplayer(error)
+// })
 // myPromise
 // .then(function(value){
 //     myDisplayer(value)
@@ -213,22 +213,22 @@ function myDisplayer(some){
 // .finally(console.log("işlem tamamlandı"))
 
 //düzeltme var
-function myPromise(){
-    let x = 0 ;
-    if(x == 0) {
-        return Promise.resolve("OK") 
-    }
-    else
-    {
-        return Promise.reject("Error")
-    }
+// function myPromise(){
+//     let x = 1 ;
+//     if(x == 0) {
+//         return Promise.resolve("OK") 
+//     }
+//     else
+//     {
+//         return Promise.reject("Error")
+//     }
     
-}
-myPromise()
-.then(function(value){
-    myDisplayer(value)
-})
-.catch(function(error){
-    myDisplayer(error)
-})
-.finally(console.log("işlem tamamlandı"))
+// }
+// myPromise()
+// .then(function(value){
+//     myDisplayer(value)
+// })
+// .catch(function(error){
+//     myDisplayer(error)
+// })
+// .finally(console.log("işlem tamamlandı"))
